@@ -7,21 +7,28 @@
  */
 public class array
 {
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
         String[] strArray = {"Alpha", "Bravo", "Charlie", "Delta", "Echo"};
-        for (int i=0; i < strArray.length; i++) {
-        System.out.println(strArray[i]); 
-    }
-        for (String array : strArray) {
-            System.out.print(array);
-    }
-        for (String array : strArray) {
-            System.out.print(array); 
-            
-           
+        for (int i=0; i < strArray.length; i++) 
+        {
+             System.out.println(strArray[i]); 
         }
-        
+        for (String array : strArray) 
+        {
+             System.out.print(array);
+        }
+        System.out.println("");
+        for (int i=0; i < strArray.length; i++) 
+        {
+            System.out.print(strArray[i]);
+            if ( i != strArray.length-1) 
+            {
+               System.out.print("-");
+            }
+        }
     }
 }
+        
+
 
